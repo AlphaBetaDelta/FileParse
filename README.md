@@ -1,31 +1,31 @@
 # FileParse
 Reads in a file of English text, and then shows a list of the most common words in the file.
 
-###Features
+### Features
 
 `usage: word_count [-h] [-json] [-version] filename`
 
 Counts unique words in a file, outputs common (default)
 or all words (-json option flag).
 
-#####positional arguments:
+##### positional arguments:
 
 `filename      filename`
 
-#####optional arguments:
+##### optional arguments:
 >  -h, --help    show this help message and exit
   -json         output json list of the words and their frequency
   -version, -v  show program's version number and exit
 
-#####Example output of common words when -json arg is NOT provided:
+##### Example output of common words when -json arg is NOT provided:
  lend - 156
     shown - 78
 
-#####Example output of all words when -json arg is provided:
+##### Example output of all words when -json arg is provided:
  {"bleed": 1, "showne": 1, "finis": 1, ...}
 
 
-###Full Description
+### Full Description
 
  Counts unique words in a file, can output common or all words.
 
@@ -44,18 +44,18 @@ or all words (-json option flag).
  if run with files with letters with diacritics. Input files are assumed
  to be English text.
 
- #####Usage:
+##### Usage:
  `python word_count.py -json (optional for json output) input_filename`
 
-  #####Example output to stdout when -json arg is NOT provided:
+##### Example output to stdout when -json arg is NOT provided:
   lend - 156
      shown - 78
         ...
 
-#####Output to stdout when -json arg is provided:
+##### Output to stdout when -json arg is provided:
  {"bleed": 1, "showne": 1, "finis": 1, ...}
 
- #####Args:
+##### Args:
 
 >    json_flag (string): If the first argument is "-json" then the
         output will be a single string of a json list of the words and
@@ -66,14 +66,14 @@ or all words (-json option flag).
 >    filename (string): The name of the ASCII or UTF-8 encoded text
             file to parse.
 
-  #####Execution:
+##### Execution:
 
 `python word_count.py henry_V.txt`
       or
  `python word_count.py -json henry_V.txt`
 
-  #####Test-suite:
+##### Test-suite:
  `python test_suite.py`
 
-  #####Python version:
+##### Python version:
   `Python 3.6.5`
