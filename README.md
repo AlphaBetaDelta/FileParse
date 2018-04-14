@@ -3,7 +3,8 @@ Reads in a file of English text, and then shows a list of the most common words 
 
 ### Features
 
-`usage: word_count [-h] [-json] [-version] filename`
+##### usage: 
+`word_count [-h] [-json] [-version] filename`
 
 Counts unique words in a file, outputs common (default)
 or all words (-json option flag).
