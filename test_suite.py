@@ -1,9 +1,11 @@
+#!/usr/bin/python
+
 import sys
-import word_count
 from unittest.mock import patch
 from io import StringIO
 import unittest
 
+import word_count
 
 class TestUM(unittest.TestCase):
     """Test class for word_count.word_counter
